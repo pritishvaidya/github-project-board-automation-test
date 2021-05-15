@@ -8,8 +8,8 @@ jobs:
     timeout-minutes: 2
     steps:
       - name: GitHub Project Board Automation
-        uses: pritishvaidya/github-project-board-automation@0.0.1
+        uses: pritishvaidya/github-project-board-automation@0.0.1.1
         with:
-          project-board: Test Board
+          project: Test Board
           column: In progress
           token: ${{ secrets.GITHUB_TOKEN }}
