@@ -3,13 +3,13 @@ name: Add Pull Requests to Project Board
   - pull_request
 jobs:
   add:
-    name: Cancel Previous Runs
+    name: Add to Board
     runs-on: macos-latest
     timeout-minutes: 2
     steps:
       - name: GitHub Project Board Automation
         uses: pritishvaidya/github-project-board-automation@0.0.1
         with:
-          project: Test Board
+          project-board: Test Board
           column: In progress
-          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
