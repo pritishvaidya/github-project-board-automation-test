@@ -8,7 +8,7 @@ jobs:
     timeout-minutes: 2
     steps:
       - name: GitHub Project Board Automation
-        uses: pritishvaidya/github-project-board-automation@0.0.1.3
+        uses: pritishvaidya/github-project-board-automation@0.0.1.4
         with:
           project: Test Board
           column: In progress
